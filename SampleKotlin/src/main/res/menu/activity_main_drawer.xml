@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_30s"
+            android:title="30sec"/>
+        <item
+            android:id="@+id/nav_60s"
+            android:title="60sec"/>
+        <item
+            android:id="@+id/nav_90s"
+            android:title="90sec"/>
+        <item
+            android:id="@+id/nav_120s"
+            android:title="120sec"/>
+        <item
+            android:id="@+id/nav_150s"
+            android:title="150sec"/>
+        <item
+            android:id="@+id/nav_180s"
+            android:title="180sec"/>
+        <item
+            android:id="@+id/nav_210s"
+            android:title="210sec"/>
+        <item
+            android:id="@+id/nav_15s"
+            android:title="15sec"/>
+    </group>
+</menu>

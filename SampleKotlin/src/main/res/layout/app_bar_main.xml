@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ProgressBar
+                android:id="@+id/pg_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+
+                android:layout_gravity="right" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+    <RadioGroup
+        android:id="@+id/mode_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/normal_button"
+
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/normal_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:text="NORMAL"
+            android:layout_gravity="left"
+            />
+
+        <RadioButton
+            android:id="@+id/debug_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:text="DEBUG"
+            android:layout_gravity="left"
+            />
+
+    </RadioGroup>
+
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/recall_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+
+            android:text="RECALL"
+            android:layout_gravity="left"
+            />
+
+        <Button
+            android:id="@+id/del_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+
+            android:text="DEL"
+            android:layout_gravity="left"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            />
+
+    <Button
+        android:id="@+id/license_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+
+        android:text="LICENSE"
+        android:layout_gravity="right"
+        />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:listitem="@layout/device_item">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
